@@ -29,3 +29,9 @@ These results suggest that claim data can provide useful information for identif
 ### Repository
 
 `ADS_505_Final_Project.ipynb` contains the complete analysis, including data preparation, exploratory analysis, modeling, model evaluation, and visualizations.
+
+### Reproducibility
+
+The notebook is designed to run in Google Colab from top to bottom. Data is retrieved directly from the FEMA OpenFEMA NFIP Redacted Claims v3 API.
+
+To create the 30,000 record sample, the full dataset was divided into 60 sections and 500 records were sampled from each section using a fixed random seed of 12345. Records were retrieved in ID order using the FEMA API. This approach was used to create a reproducible sample that was distributed across the full dataset rather than relying on the first available records.
